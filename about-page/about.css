@@ -1,0 +1,387 @@
+@import url(../styles.css);
+@import url(../recipe-page/recipe-page.css);
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 100px;
+    width: 70%;
+    margin-left: 150px;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.description h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.description img {
+    height: 100%;
+    width: 400px;
+}
+
+.our-services h2{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.our-services h4 {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.our-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    width: 70%;
+    margin-left: 150px;
+    height: 10vh;
+}
+
+.we-offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 100px;
+    width: 70%;
+    margin-left: 150px;
+}
+
+.bar,
+.menu,
+.party{
+    width: 33%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.we-offer i{
+    font-size: 4em;
+}
+
+.we-offer h5{
+    font-size: 1.5em;
+}
+
+.we-offer p{
+    text-align: justify;
+    width: 90%;
+}
+
+.our-special{
+    margin-top: 100px;
+    padding: 20px 0;
+    background-image: url(../resurse/white-board.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 82%;
+    margin-left: 147px;
+}
+
+.our-special h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-row,
+.right-row{
+    width: 20%;
+    padding: 20px 100px;
+}
+
+.button{
+    text-align: center;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: salmon;
+}
+.button a:hover{
+    color: white;
+    background-color: red;
+}
+
+.grid-parent{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    justify-content: center;
+}
+
+.grid-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.counters{
+    padding: 3em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.counters > div{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em 2em;
+}
+
+.counter {
+    position: relative;
+}
+
+.counter i{
+    font-size: 2em;
+}
+
+.counter h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.counter:not(:last-child)::before {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 2px;
+    height: 3em;
+    top: 50%;
+    transform: translateY(-50%);
+    right:  -1em;
+}
+
+.our-chefs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chef img{
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.chefs-links i{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.chef h4{
+    color: red;
+}
+
+.chef{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width:1200px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .main-photo{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .description-content{
+        padding: 20px;
+    }
+    .description img{
+        width: 90%;
+        margin-bottom: 40px;
+        border: 2px solid white;
+    }
+    .description,
+    .we-offer,
+    .our-services,
+    .menu,
+    .party,
+    .bar,
+    .our-special,
+    .row,
+    .left-row,
+    .right-row,
+    .our-chefs{
+        width:100vw;
+        height: fit-content;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .our-services{
+        width: 80%;
+        padding: 20px
+    }
+
+    .grid-parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .grid-images img{
+        width: 90vw;
+        height: 100%;
+        object-fit: cover;
+    }
+    .counters{
+        width: 85%;
+    }
+    .counters > div {
+        grid-template-columns: 1fr 1fr;
+    }
+    .counter:nth-child(2)::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .main-photo{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .description-content{
+        padding: 20px;
+    }
+    .description img{
+        width: 90%;
+        margin-bottom: 40px;
+        border: 2px solid white;
+    }
+    .menu i{
+        padding-top: 30px;
+    }
+    
+    .description,
+    .we-offer,
+    .our-services,
+    .menu,
+    .party,
+    .bar,
+    .our-special,
+    .row,
+    .left-row,
+    .right-row,
+    .our-chefs{
+        width:100vw;
+        height: fit-content;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .our-services{
+        width: 80%;
+        padding: 20px
+    }
+
+    .grid-parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }    
+    .grid-images img{
+        width: 90vw;
+        height: 100%;
+        object-fit: cover;
+    }
+    .counters{
+        width: 85%;
+    }
+
+    .counters > div {
+        grid-template-columns: 1fr;
+        row-gap: 5em;
+    }
+    .counter:not(:last-child)::before {
+        width: 90%;
+        height: 2px;
+        top: initial;
+        right: initial;
+        bottom:  -3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

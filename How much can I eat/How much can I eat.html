@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How much can I eat?</title>
+    <link rel="stylesheet" href="./How much can I eat.css">
+    <script src="https://kit.fontawesome.com/1399a63f88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <span style="font-size:30px;cursor:pointer;color:white;width: 140px" onclick="openNav()">&#9776;</span>
+        <a href="../index.html"><img src="../resurse/logo-sapore-italiano-writing.png" alt=""></a>
+        <a href="../How much can I eat/How much can I eat.html">How much can I eat?</a>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="../about-page/about.html">About</a>
+          <a href="../recipe-page/recipe-page.html">Recipe</a>
+          <a href="../services-page/services.html">Services</a>
+          <a href="../menu-page/menu.html">Menu</a>
+          <a href="../services-page/services.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="containerOrder">
+        <h2>Pizza Order Calculator</h2>
+        <form id="pizzaForm">
+          <div class="personal-info">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="guests">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <label for="occasion">Are we gearing up for a birthday or anniversary celebration?</label>
+            <select id="occasion" name="occasion" required>
+              <option value="none">No</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+            </select>
+          </div>
+          <div class="duration-info">
+            <label for="duration">Duration (hours):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+            
+            <label for="foodConsumption">What is the usual amount of food consumed by your guests?</label>
+            <select id="foodConsumption" name="foodConsumption" required>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            
+            <label for="pizzaTypes">Specify the range of pizza choices you're considering:</label>
+            <input type="number" id="pizzaTypes" name="pizzaTypes" min="1" required>
+          </div>          
+          
+          
+          
+          <button type="submit">Generate Response</button>
+        </form>
+        <div id="response"></div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-left">
+                <h2>Contact</h2>
+                <p><a href="../contact-page/contact.html">Email: office@sapore.italiano.com</a></p>
+                <p><a href="../contact-page/contact.html">Phone: (0040) 774-555-666</a></p>
+                <p><a href="../contact-page/contact.html">Address: Piața Aurarilor 18, Sibiu 557260</a></p>
+            </div>
+            <div class="footer-middle">
+              <img src="../resurse/Sapore_Italiano_Logo-removebg-preview-2.png" alt="">
+            </div>
+            <div class="footer-right">
+              <h2>Subscribe to Our Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email.." required> <br>
+                    <button type="submit">Subscribe</button>
+                </form>          
+            </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="rights">
+                <p>&copy; 2024 Sapore Italiano. All Rights Reserved. </p>
+                <p> Designed by <a href="#" target="_blank"> Pătru Andrei</a></p>
+              </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="../script.js"></script>
+    <script src="../How much can I eat/How much can I eat.js"></script>
+</body>
+</html>

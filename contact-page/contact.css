@@ -1,0 +1,170 @@
+@import url(../styles.css);
+
+body{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    transition: all 0.8s ease;
+}
+
+.container .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black
+}
+
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+    color: white;
+}
+
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 90%;
+    width: 90%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #F0F1F8;
+    border-radius: 5px;
+    padding: 0 15px;
+    resize: none;
+}
+
+input :placeholder-shown{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.error-message{
+    font-size: 18px;
+    color: rgb(167, 10, 10);
+    margin-top: 4px;
+}
+
+.right-side .message-box{
+    min-height: 180px;
+}
+
+.form-button button{
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.form-button{
+    color:black;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width: 950px) {
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap ;
+    }
+    .container .content .left-side::before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}

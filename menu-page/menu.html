@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./menu.css">
+    <script src="https://kit.fontawesome.com/1399a63f88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <span style="font-size:30px;cursor:pointer;color:white;width: 140px" onclick="openNav()">&#9776;</span>
+        <a href="../index.html"><img src="../resurse/logo-sapore-italiano-writing.png" alt=""></a>
+        <a href="../How much can I eat/How much can I eat.html">How much can I eat?</a>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="../about-page/about.html">About</a>
+          <a href="../recipe-page/recipe-page.html">Recipe</a>
+          <a href="../services-page/services.html">Services</a>
+          <a href="./menu.html">Menu</a>
+          <a href="../contact-page/contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <div class="menu">
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        <input type="checkbox" id="checkbox-page4">
+        <input type="checkbox" id="checkbox-page5">
+        <input type="checkbox" id="checkbox-page6">
+        <input type="checkbox" id="checkbox-page7">
+        <input type="checkbox" id="checkbox-page8">
+        <input type="checkbox" id="checkbox-page9">
+        <input type="checkbox" id="checkbox-page10">
+        <input type="checkbox" id="checkbox-page11">
+        <div class="book">
+            <div class="cover">
+                <label for="checkbox-cover">
+                    <p>MENU</p>
+                </label>
+            </div>
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <img src="../resurse/Sapore_Italiano_Logo-removebg-preview-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quaerat voluptate provident culpa eum,
+                         omnis soluta sequi voluptates! Aliquid ipsam quae distinctio laudantium nostrum culpa 
+                         possimus cupiditate laboriosam. Deserunt, deleniti.</p>
+                    <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-focaccia.jpg">
+                    <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <h2>Focaccia</h2>
+                    <p>Indulge in our classic Italian focaccia, a culinary delight from Liguria. Savor the airy crumb and crisp crust kissed with olive oil. Choose from traditional sea salt or aromatic rosemary toppings to elevate your experience.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Bread flour (500g)</li>
+                        <li>Salt (10g)</li>
+                        <li>Active dry yeast (7g)</li>
+                        <li>Lukewarm water (350ml)</li>
+                        <li>Extra-virgin olive oil (60ml), plus more for drizzling</li>
+                    </ul>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-red-onion-tuna.jpg">
+                    <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h2>Red Onion Tuna Pizza</h2>
+                    <p>Savor the tantalizing blend of ocean-fresh tuna and tangy red onions atop a bed of creamy mozzarella. Each bite delivers a symphony of flavors, from the crisp crust to the savory tomato sauce. Experience culinary harmony with every slice.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Red onion (50g)</li>
+                        <li>Premium fresh tuna (150g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-chicken-liver-delice.jpg">
+                    <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page4">
+                <div class="front-page">
+                    <h2>Chicken Liver Delice Pizza</h2>
+                    <p>Experience the savory delight of our Chicken Liver Delice pizza. With crispy dough, tangy tomato sauce, creamy mozzarella, and tender chicken liver, each bite is a symphony of flavors. Topped with fresh lettuce for a crisp finish, it's a culinary journey you won't forget.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Chicken liver (100g)</li>
+                        <li>Fresh lettuce (50g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-bbq-buffallo-wings.jpg">
+                    <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page5">
+                <div class="front-page">
+                    <h2>BBQ Buffallo Wings Pizza</h2>
+                    <p>Savor our BBQ Buffalo Wings pizza, crafted with care using dough, tomato sauce, melted mozzarella, tender Buffalo wings, tangy BBQ sauce, and a touch of fiery hot chili. Indulge in a fusion of flavors that will leave you craving for more.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Buffalo wings (120g)</li>
+                        <li>BBQ sauce (50g)</li>
+                        <li>Hot chili flakes (10g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page5"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-italian-soul.jpg">
+                    <label class="prev" for="checkbox-page5"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page6">
+                <div class="front-page">
+                    <h2>Italian Soul Pizza</h2>
+                    <p>Experience the heart of Italy in every bite with our Italian Soul Pizza. Each slice is a delightful fusion of rich tomato sauce, velvety mozzarella, and aromatic fresh basil, perfectly capturing the essence of Italian flavors.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Buffalo mozzarella (120g)</li>
+                        <li>Fresh basil (10g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page6"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-diavola.jpg">
+                    <label class="prev" for="checkbox-page6"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page7">
+                <div class="front-page">
+                    <h2>Diavola</h2>
+                    <p>Delight in our Diavola Pizza, a fiery blend of flavors that ignites the palate. With classic dough, tangy tomato sauce, gooey mozzarella, zesty spicy salami, savory chorizo, and a touch of hot chili, each slice offers a tantalizing culinary experience.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Spicy salami (50g)</li>
+                        <li>Chorizo (50g)</li>
+                        <li>Hot chili (30gr)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page7"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-formagi.jpg">
+                    <label class="prev" for="checkbox-page7"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page8">
+                <div class="front-page">
+                    <h2>Formagi</h2>
+                    <p>Join us for a cheese symphony in the form of our Formagi Pizza. With a perfect blend of brie, gorgonzola, emmental, and premium parmesan atop our signature dough and tomato sauce, it's a melody of flavors you won't forget.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Brie (100g)</li>
+                        <li>Gorgonzola (75g)</li>
+                        <li>Emmental (75g)</li>
+                        <li>Premium Parmesan cheese (50g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page8"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-salami.jpg">
+                    <label class="prev" for="checkbox-page8"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page9">
+                <div class="front-page">
+                    <h2>Gourmet Salami Feast</h2>
+                    <p>Savor the exquisite taste of our Gourmet Salami Feast. Each slice boasts our artisanal dough, zesty tomato sauce, gooey mozzarella, and perfectly seasoned salami, creating a culinary masterpiece you won't soon forget.</p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Salami (80g)</li>
+                        <li>Black olives (35g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page9"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/menu-con-carne.jpg">
+                    <label class="prev" for="checkbox-page9"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page10">
+                <div class="front-page">
+                    <h2>Spicy Con Carne Delight</h2>
+                    <p></p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dough (250g)</li>
+                        <li>Tomato sauce (150g)</li>
+                        <li>Mozzarella (200g)</li>
+                        <li>Seasoned ground beef (100g)</li>
+                        <li>Pepperoni (50g)</li>
+                        <li>Bacon (50g)</li>
+                        <li>Bell peppers (50g) </li>
+                        <li>Onions (50g)</li>
+                    </ul>
+                    <label class="next" for="checkbox-page10"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="../resurse/img8.jpg">
+                    <label class="prev" for="checkbox-page10"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page11">
+                <div class="front-page">
+                    <img src="../resurse/Sapore_Italiano_Logo-removebg-preview-2.png" alt="">
+                    <h2>A Taste of Excellence, Every Time</h2>
+                    <p>As you reach the end of our menu, we want to express our gratitude for your visit. We hope our culinary creations have left a lasting impression on your palate.<br>
+                        Your feedback is invaluable to us. Please share your thoughts with our staff or leave a review online.
+                    </p>
+                    <h2>The Sapore Italiano Team</h2>
+                </div>
+            </div>
+            <div class="back-cover"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-left">
+                <h2>Contact</h2>
+                <p><a href="../contact-page/contact.html">Email: office@sapore.italiano.com</a></p>
+                <p><a href="../contact-page/contact.html">Phone: (0040) 774-555-666</a></p>
+                <p><a href="../contact-page/contact.html">Address: Piața Aurarilor 18, Sibiu 557260</a></p>
+            </div>
+            <div class="footer-middle">
+              <img src="../resurse/Sapore_Italiano_Logo-removebg-preview-2.png" alt="">
+            </div>
+            <div class="footer-right">
+              <h2>Subscribe to Our Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email.." required> <br>
+                    <button type="submit">Subscribe</button>
+                </form>          
+            </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="rights">
+                <p>&copy; 2024 Sapore Italiano. All Rights Reserved. </p>
+                <p> Designed by <a href="#" target="_blank"> Pătru Andrei</a></p>
+              </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="./menu.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

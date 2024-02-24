@@ -1,0 +1,83 @@
+@import url(../styles.css);
+
+.dine-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.dine-in p{
+    color:rgb(204, 91, 16);
+    font-size: 18px;
+    margin: 5px;
+}
+
+.dine-in span{
+    color: black;
+}
+
+.dine-in h2{
+    font-size: 50px;
+    color: black;
+}
+
+
+.delivery-areas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.delivery-areas h5{
+    font-size: 18px;
+    color:rgb(204, 91, 16);
+}
+
+.delivery-areas h3{
+    font-size: 32px;
+    color:black;
+    font-weight: bold;
+}
+
+.delivery-areas p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.delivery-areas a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.delivery-carborro,
+.delivery-durham ,
+.delivery-chapel-hill ,
+.delivery-cary ,
+.delivery-morrisville{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 60px;
+    background-image: url(../resurse/white-board.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .dine-in {
+        text-align: center;
+    }
+}
